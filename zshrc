@@ -238,6 +238,9 @@ fi
 alias ll='ls -l'
 alias la='ls -A'
 alias l='ls -CF'
+alias cls='clear'
+alias lsa='ls -la'
+alias full-upgrade='sudo apt update -y && sudo apt full-upgrade -y && sudo apt autoclean -y && sudo apt autoremove -y'
 
 # enable auto-suggestions based on the history
 if [ -f /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh ]; then
