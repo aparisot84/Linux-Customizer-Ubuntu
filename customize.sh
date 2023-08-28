@@ -1,20 +1,3 @@
-#O ARGUMENTO -e SERVE PARA QUE O ECHO ACEITE CARACTERES ESPECIAIS COMO \n (newline) and \t (tab) inside of the input string E OS COMANDOS DE COLORIZAÇAO.
-
-#TEM QUE VER UM JEITO DE ADICIONAR O ZSHRC TANTO PRO ROOT COMO PRO USUARIO QUE CHAMOU O SCRIPT
-
-#TIRAR O SUDO DE TODOS OS COMANDOS E COLOCAR UMA MENSAGEM PARA EXECUTAR COMO ROOT
-
-#VERIFICAR SE QUANDO FAZ ASSIM ELE DEIXA A CUSTOMIZAÇAO PARA O ROOT E PARA O USER
-
-#fAZER UM README EXPLICANDO O QUE ESTE SCRIPT FAZ
-
-# Colocar um menu inicial explicando o que faz e o que instala, perguntando se o usuario aceita
-
-# Ver o que mais da pra colocar aqui de persolalizaçao!!!!!
-
-##########################################################
-
-
 #!/bin/bash
 BLUE='\033[0;34m'
 WHITE='\033[0;37m'
@@ -99,7 +82,6 @@ echo "alias cls='clear'" >> ~/.zshrc
 
 exec zsh
 
-
 #########ROOT ZSH CUSTOMIZATION################
 
 # Replace the configs with the downloaded one.
@@ -111,6 +93,22 @@ echo -e "${GREENBOLD}Switching the Shell to ZSH${WHITE}"
 chsh -s $(which zsh)
 
 echo "O zsh esta configurado como shell padrao para este usuario e para o Root. Ao reiniciar a sessao o shell entrara automaticamente no zshell com as configuraç~oes instaladas "
+
+##################    COMENTÁRIOS    ######################
+
+#O ARGUMENTO -e SERVE PARA QUE O ECHO ACEITE CARACTERES ESPECIAIS COMO \n (newline) and \t (tab) inside of the input string E OS COMANDOS DE COLORIZAÇAO.
+
+#TEM QUE VER UM JEITO DE ADICIONAR O ZSHRC TANTO PRO ROOT COMO PRO USUARIO QUE CHAMOU O SCRIPT
+
+#TIRAR O SUDO DE TODOS OS COMANDOS E COLOCAR UMA MENSAGEM PARA EXECUTAR COMO ROOT
+
+# Melhorar o readme
+
+# Colocar uma mensagem inicial explicando o que faz e o que instala, perguntando se o usuario aceita
+
+# Ver o que mais da pra colocar aqui de persolalizaçao!!!!!
+
+#############################################################
 
 
 
