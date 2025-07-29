@@ -18,10 +18,14 @@ There are two main things this script does:
       
 2 - Install and configure ZSH. After the instalation the script download a copy of zshrc file and writes it to the zsh configuration file for the current user's folder. Then the ZSH is going to look exactly like the one in Kali Linux.
 
-3 - Add some aliases to be used in terminal:
+3 - Download the zshrc file in the correct directory
 
-full-upgrade
-lsa
+Ativar o nano colorido
+
+ir no arquivo: sudo nano /etc/nanorc
+e desmarcar o comentário de 
+## To include most of the existing syntax definitions, you can do:
+include /usr/share/nano/*.nanorc
 
 
 
